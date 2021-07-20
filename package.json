@@ -1,11 +1,15 @@
 {
   "name": "qls-js-tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "node test/test.js"
   },
+  "main": "dist/tool.cjs.js",
+  "module": "dist/tool.es.esm",
+  "browser": "dist/tool.umd.js",
+  "author": "sunqianlong",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.14.6",

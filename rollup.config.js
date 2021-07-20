@@ -11,15 +11,19 @@ export default [
         input: 'src/index.js',
         output: [
             {
-                file: './dist/tool.iife.js',
-                format: 'iife'
+                file: './dist/tool.cjs.js',
+                format: 'cjs'
 
             }, {
                 file: './dist/tool.es.js',
                 format: 'es'
 
+            }, {
+                file: './dist/tool.umd.js',
+                format: 'umd',
+                name: 'file'
             }],
-        external: ['lodash'],
+        external: ['lodash','ms'],
         globals: {
             lodash: '_'
         },
